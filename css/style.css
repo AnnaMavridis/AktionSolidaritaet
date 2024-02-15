@@ -92,6 +92,7 @@ main .aufruf a {
 
 main .aufruf a:hover{
     background-color: #b14415;
+}
 
 .links{
     position: relative;
@@ -114,7 +115,7 @@ main .aufruf a:hover{
     position: relative;
     left: 70%;
     width: 30%;
-}
+    }
     
     .nav-visible{
         width: 30%;
@@ -144,7 +145,4 @@ main .aufruf a:hover{
 .right-aligned {
     float: right;
     margin: 0 0 2% 2%;
-}
-
-
 }
