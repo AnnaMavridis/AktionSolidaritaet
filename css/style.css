@@ -63,10 +63,12 @@ header .hamburger-opened .bar-3{
     transition: 0.4s;   
     background: var(--nav-background-color);
     z-index: 1000;
+    font-size: 0;
 }
 
 .nav-visible{
     width: 100%;
+    font-size: 10px;
 }
 
 main .aufruf{
