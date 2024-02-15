@@ -111,12 +111,8 @@ main .aufruf a:hover{
     font-weight: bold;
 }
 
-.nav-visible .links a{
-    opacitiy: 100%;
-}
-
-.nav .links a{
-    opacity: 0;
+body:not(.nav-visible) .links a{
+    opacitiy: 0;
 }
 
 @media only screen and (min-width: 600px) {
