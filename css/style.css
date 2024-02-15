@@ -112,7 +112,11 @@ main .aufruf a:hover{
 }
 
 .nav-visible .links a{
-    text-size: 0;
+    opacitiy: 100%;
+}
+
+.nav .links a{
+    opacity: 0;
 }
 
 @media only screen and (min-width: 600px) {
