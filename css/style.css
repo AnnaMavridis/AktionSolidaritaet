@@ -66,6 +66,7 @@ header .hamburger-opened .bar-3{
 
 .nav-visible{
     width: 100%;
+    z-index: 1000;
 }
 
 main .aufruf{
