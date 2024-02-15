@@ -1,0 +1,24 @@
+@font-face{
+    font-family: Raleway;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/Raleway-VariableFont.ttf") format("truetype");
+}
+
+:root{
+    --background-color: #3D3D3D;
+    --nav-background-color: rgb(61,61,61);
+    --hamburger-bar-color: #ecf0f1;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Raleway;
+    font-weight: normal;
+    background: url("../img/Background.png");
+    background-size: 100%;
+    background-attachment: fixed;
+}
