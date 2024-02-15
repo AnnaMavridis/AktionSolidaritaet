@@ -61,7 +61,8 @@ header .hamburger-opened .bar-3{
     background-color: var(--nav-background-color);
     align-items: center;
     justify-content: center;
-    transition: 0.4s;
+    transition: 0.4s;    
+    z-index: 1000;
 }
 
 .nav-visible{
