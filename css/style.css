@@ -106,7 +106,7 @@ main .aufruf a:hover{
 .links a{
     position: relative;
     text-decoration: none;
-    color: white;
+    color: #472d30;
     font-size: 25px;
     font-weight: bold;
 }
