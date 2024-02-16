@@ -59,7 +59,8 @@ header .hamburger-opened .bar-3{
     height: 100vh;
     align-items: center;
     justify-content: center;
-    transition: 0.4s;   
+    transition: 0.4s;
+    right: 0;
     background: #ffd79e;
     z-index: 1000;
     font-size: 0;
