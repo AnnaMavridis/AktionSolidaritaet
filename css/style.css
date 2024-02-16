@@ -1,32 +1,31 @@
-header{
+/* Header */
+header {
     display: flex;
     padding: 15px;
     background-color: #ffd79e;
     align-items: center;
 }
 
-header .logo{
-    width: 90%;
+header .logo {
+    flex: 1;
 }
 
-header .logo-text{
+header .logo-text {
     position: relative;
     left: 1%;
 }
 
-header h3{
+header h3 {
     margin-left: 1%;
     visibility: hidden;
 }
 
-header .hamburger{
-    position: absolute;
-    right: 1%;
+header .hamburger {
     cursor: pointer;
+    display: none; /* Hide initially on larger screens */
 }
 
-header .hamburger .bar{
-    position: relative;
+header .hamburger .bar {
     width: 30px;
     height: 5px;
     background-color: var(--background-color);
@@ -35,50 +34,53 @@ header .hamburger .bar{
     border-radius: 20px;
 }
 
-header .hamburger .bar-2{
+header .hamburger .bar-2 {
     width: 20px;
     left: 10px;
 }
 
-header .hamburger-opened .bar-1{
-    transform: translate(0, 12px) rotate(-45deg);
-}
-
-header .hamburger-opened .bar-2{
-    opacity: 0;
-}
-
-header .hamburger-opened .bar-3{
-    transform: translate(0, -12px) rotate(45deg);
-}
-
-.nav{
-    display: flex;
+/* Navigation */
+.nav {
     position: fixed;
-    width: 0;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
-    transition: 0.4s;
-    right: 0;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
     background: #ffd79e;
     z-index: 1000;
-    font-size: 0;
-    font-color: #ffd79e;
+    overflow: hidden;
+    transition: height 0.4s;
 }
 
-.nav-visible{
+.nav-visible {
+    height: 100vh;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #472d30;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Main Content */
+main {
+    padding: 15px;
+}
+
+main .aufruf {
     width: 100%;
-    font-size: 25px;
-}
-
-main .aufruf{
-    position: relative;
-    width: 80%;
     padding: 10px;
     background-color: #f599214f;
     border: 5px solid #EE7F00;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 main .aufruf a {
@@ -94,59 +96,24 @@ main .aufruf a {
     transition: background-color 0.3s, color 0.3s;
 }
 
-main .aufruf a:hover{
+main .aufruf a:hover {
     background-color: #b14415;
 }
 
-.links{
-    position: relative;
-    width: 100px;
-    text-align: center;
-    top: -77px;
-    line-height: 100px;
-}
-
-.links a{
-    position: relative;
-    text-decoration: none;
-    color: #472d30;
-    font-weight: bold;
-}
-
-@media only screen and (min-width: 600px) {
-    main .aufruf{
-    position: relative;
-    left: 70%;
-    width: 30%;
-    }
-    
-    .nav-visible{
-        width: 30%;
-        right: 0;
-        background-color: var(--nav-background-color);
+@media only screen and (max-width: 600px) {
+    header .logo {
+        width: 80%; /* Adjust as needed */
     }
 
-    main{
-        display: block;
-        padding: 5%;
-        justify-content: center;
-        /*background-color: var(--background-color);*/
+    header .hamburger {
+        display: block; /* Show hamburger icon on smaller screens */
     }
 
-    main .article{
-        width: fit-content;
+    .links {
+        top: 0;
     }
 
-    header h3{
-        visibility: visible;
+    main .aufruf {
+        width: 100%;
     }
-
-    header .logo{
-        width: 4.5%;
-    }
-}
-
-.right-aligned {
-    float: right;
-    margin: 0 0 2% 2%;
 }
