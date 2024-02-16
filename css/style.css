@@ -63,7 +63,7 @@ header .hamburger-opened .bar-3{
     background: #ffd79e;
     z-index: 1000;
     font-size: 0;
-    font-color: var(--nav-background-color);
+    font-color: #ffd79e;
 }
 
 .nav-visible{
@@ -122,6 +122,7 @@ main .aufruf a:hover{
     .nav-visible{
         width: 30%;
         right: 0;
+        background-color: var(--nav-background-color);
     }
 
     main{
